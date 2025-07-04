@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="Tic-Tac-Toe.css">
+    <link rel="stylesheet" href="Tic-Tac-Toe.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <p class="game-over">Game Over!</p>
+    <p class="status"></p>
+    <button class="tryagain">Play Again</button>
+    <script>
+        const winner = localStorage.getItem('winner');
+        const statusDiv = document.querySelector('.status');
+        if (winner === "O" || winner === "X") {
+            statusDiv.innerText = winner + " is the winner!";
+        } else {
+            statusDiv.innerText = "It's a tie!";
+        }
+    </script>
+    <script src="Tic-Tac-Toe.js"></script>
+</body>
+</html>

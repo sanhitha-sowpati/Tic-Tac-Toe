@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: lavender;
+    text-align: center;
+    font-family: "Bubblegum Sans", sans-serif;
+}
+/*first page*/
+.choice{
+    font-size: 40px;
+    margin-top: 100px;
+    text-shadow: 4px 5px 2px #c3e0e0;
+}
+.choice-button{
+    width: 110px;
+    font-size: large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 40px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 2px solid purple;
+    padding: 10px;
+    background-color: #d2eded;
+    box-shadow: 6px 6px 6px #c3e0e0;
+}
+.choice-button:hover{
+    background-color: rgb(234, 251, 253);
+    box-shadow: 6px 6px 6px rgb(234, 251, 253);
+    cursor: pointer;
+
+}
+/*first page*/
+
+/*Second page*/
+.heading{
+    font-size: 45px;
+    margin-top: 60px;
+    text-shadow: 2px 2px 2px rgb(184, 237, 237);
+
+}
+.box{
+    width: 18vmin;
+    height: 18vmin;
+    border-radius: 20px;
+    border: 2px solid purple;
+    background-color: rgb(239, 217, 246);
+    cursor: pointer;
+    font-size: 40px;
+    font-family: "Bubblegum Sans", sans-serif;
+    color: rgb(97, 63, 110);
+    margin-right: 10px;
+    box-shadow: 2px 2px 2px grey;
+}
+.box:hover{
+    background-color: rgb(243, 230, 244);
+}
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+}
+.turn-display{
+    font-size: 35px;
+    margin-top: 35px;
+    color: grey;
+}
+/*second page*/
+
+/*third page*/
+.game-over{
+    font-size: 50px;
+    margin-top: 100px;
+    text-shadow: 2px 2px 2px #c3e0e0;
+}
+.status{
+    font-size: 38px;
+    margin-top: 30px;
+}
+.tryagain{
+    width: 110px;
+    font-size: large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 40px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 2px solid purple;
+    padding: 10px;
+    background-color: #d2eded;
+    box-shadow: 3px 3px 3px #c3e0e0;
+}
+.tryagain:hover{
+    background-color: rgb(234, 251, 253);
+    box-shadow: 2px 2px 2px rgb(234, 251, 253);
+    cursor: pointer;
+
+}
+/*third page*/
+
+@media (max-width: 600px) {
+  .box {
+    width: 20vw;
+    height: 20vw;
+    margin-right: 2vw;
+    font-size: 8vw;
+  }
+  .game {
+    width: 70vw;
+    height: 70vw;
+  }
+}
